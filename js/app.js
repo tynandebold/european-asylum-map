@@ -240,9 +240,15 @@
     var ttWidth = $tooltip.width();
     var ttHeight = $tooltip.height();
 
-    //Tooltip positions
+    //Tooltip placement positions
     var ttLeft = xPos - (ttWidth / 2);
-    var ttTop = yPos - ttHeight - 50;
+    var ttTop;
+
+    if (yPos < 65) {
+      ttTop = yPos - ttHeight + 75;
+    } else {
+      ttTop = yPos - ttHeight - 50;
+    }
 
     $tooltip.css({
       'top': ttTop + 'px',

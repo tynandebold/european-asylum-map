@@ -138,7 +138,7 @@ body {
         border-radius: 3px;
         font-size: 10px;
         font-weight: normal;
-        line-height: 13px;
+        line-height: 12px;
         letter-spacing: .5px;
         text-transform: uppercase;
         color: #333;
@@ -146,6 +146,7 @@ body {
         margin: 0 0 5px;
         height: 45px;
         vertical-align: top;
+        transition: background-color .25s ease-out;
 
         @include breakpoint("tablet") {
           width: auto;
@@ -159,6 +160,11 @@ body {
 
       .btn:hover {
         cursor: pointer;
+        background-color: #eee;
+      }
+
+      .btn:focus {
+        outline: none;
       }
 
       .btn.active {
