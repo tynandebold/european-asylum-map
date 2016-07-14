@@ -6,6 +6,7 @@ body {
 
 .interactive-map-section {
   display: flex;
+  flex-direction: row;
   max-width: 1750px;
   margin: 2%;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
