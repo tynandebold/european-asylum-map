@@ -1,0 +1,380 @@
+@import 'breakpoints';
+
+body {
+  margin: 0;
+}
+
+.interactive-map-section {
+  display: flex;
+  max-width: 1750px;
+  margin: 2%;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+  @include breakpoint("mobile-max") {
+    margin: 25px auto;
+  }
+
+  .hed-dek-wrapper {
+    max-width: 31%;
+    display: inline-block;
+    vertical-align: top;
+
+    @include breakpoint("tablet-landscape") {
+      display: block;
+      margin: 0 auto;
+    }
+    @include breakpoint("tablet") {
+      max-width: 100%;
+      margin: 0 auto;
+      display: block;
+    }
+    @include breakpoint("mobile-max") {
+      max-width: 100%;
+      margin: 0;
+    }
+
+    .headline {
+      font-family: 'Lora', serif;
+      font-weight: 700;
+      font-size: 29px;
+      line-height: 33px;
+      margin-bottom: 7px;
+
+      @include breakpoint("tablet-landscape") {
+        max-width: 580px;
+        margin: 0 auto 5px;
+      }
+      @include breakpoint("tablet") {
+        max-width: 580px;
+        margin: 0 auto 5px;
+      }
+      @include breakpoint("mobile-max") {
+        font-size: 28px;
+        line-height: 35px;
+        margin: 0 25px 8px;
+      }
+    }
+
+    .dek {
+      font-family: 'Lora', serif;
+      font-size: 18px;
+      line-height: 25px;
+      font-weight: 400;
+
+      @include breakpoint("tablet-landscape") {
+        max-width: 580px;
+        margin: 0 auto;
+      }
+      @include breakpoint("tablet") {
+        max-width: 580px;
+        margin: 0 auto;
+      }
+      @include breakpoint("mobile-max") {
+        font-size: 18px;
+        line-height: 25px;
+        margin: 0 25px;
+      }
+    }
+  }
+
+  .nav-wrapper {
+    display: block;
+    margin: 25px auto 10px;
+
+    @include breakpoint("tablet") {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      text-align: center;
+      margin: 25px 0 35px;
+      max-width: 100%;
+    }
+    @include breakpoint("mobile-max") {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      text-align: center;
+      margin: 25px 0;
+      max-width: 100%;
+    }
+
+    /* button styles */
+    .btns-wrapper {
+      display: inline-block;
+      font-size: 12px;
+
+      @include breakpoint("tablet") {
+        margin-bottom: 15px;
+      }
+      @include breakpoint("mobile-max") {
+        margin: 0 25px 15px;
+      }
+
+      .btn-group {
+        @include breakpoint("tablet") {
+          display: inline-block;
+        }
+
+        &.group2 {
+          @include breakpoint("tablet") {
+            margin-left: 15px;
+          }
+        }
+      }
+
+      .btn {
+        padding: 10px 15px;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        font-size: 10px;
+        font-weight: normal;
+        line-height: 13px;
+        letter-spacing: .5px;
+        text-transform: uppercase;
+        color: #333;
+        width: 45%;
+        margin: 0 0 5px;
+        height: 45px;
+        vertical-align: top;
+
+        @include breakpoint("tablet") {
+          width: auto;
+          margin: 0;
+        }
+        @include breakpoint("mobile-max") {
+          width: 100%;
+          margin: 0 0 5px;
+        }
+      }
+
+      .btn:hover {
+        cursor: pointer;
+      }
+
+      .btn.active {
+        background-color: #333;
+        color: #fff;
+      }
+
+      .btn-label {
+        line-height: 20px;
+        margin-bottom: 2px;
+        padding-left: 1px;
+        font-style: italic;
+        font-size: 14px;
+        font-weight: 300;
+        text-align: left;
+      }
+
+      .demo-label {
+        margin-top: 7px;
+      }
+    }
+
+    /* scale styles */
+    .scale-wrapper {
+      display: inline-block;
+      line-height: normal;
+      margin-top: 5px;
+
+      @include breakpoint("desktop") {
+        margin-top: 20px;
+      }
+      @media (max-width: 380px) {
+        margin: 0 10px 0 25px;
+        text-align: left;
+      }
+
+      .scale-step-wrapper {
+        font-size: 0;
+        width: 306px;
+        display: inline-block;
+        text-align: left;
+
+        @media (max-width: 380px) {
+          width: 216px;
+        }
+      }
+
+      .scale-step {
+        display: inline-block;
+        border: 2px solid #fff;
+        width: 30px;
+        height: 20px;
+
+        @media (max-width: 380px) {
+          width: 20px;
+        }
+      }
+
+      .scale-label {
+        margin-top: 5px;
+        display: inline-block;
+        font-size: 11px;
+      }
+
+      .less-label {
+        margin-left: 2px;
+      }
+
+      .more-label {
+        float: right;
+        padding-right: 2px;
+      }
+
+      .no-data-wrapper {
+        display: inline-block;
+        width: 50px;
+        font-size: 0;
+        margin-left: 15px;
+      }
+
+      .no-data-box {
+        background-color: #aaa;
+      }
+
+      .no-data-label.scale-label {
+        padding-left: 2px;
+      }
+    }
+  }
+
+  /* map styles */
+  .map {
+    position: relative;
+    height: 0;
+    width: 69%;
+    display: inline-block;
+    padding: 0;
+    padding-bottom: 50%;
+    max-width: 1750px;
+    margin: 0 auto;
+
+    @include breakpoint("tablet") {
+      width: 100%;
+      padding-bottom: 70%;
+    }
+    @include breakpoint("mobile-max") {
+      width: 100%;
+      padding-bottom: 70%;
+    }
+    @include breakpoint("tablet-landscape") {
+      padding-bottom: 62%;
+    }
+
+    .svg-elem {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      left: 0;
+      top: 0;
+    }
+  }
+
+  .country.active {
+    fill: #FF9600;
+  }
+
+  .country {
+    transition: fill .3s ease;
+    fill: #aaa;
+  }
+
+  .country:hover {
+    cursor: default;
+  }
+
+  .countryBorders {
+    fill: none;
+    stroke: #fff;
+    stroke-linejoin: round;
+  }
+
+  .tooltip {
+    position: absolute;
+    text-align: center;
+    width: auto;
+    height: auto;
+    padding: 10px 8px;
+    font-size: 12px;
+    line-height: normal;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background: #fff;
+    border: 1px solid #ccc;
+    pointer-events: none;
+  }
+
+  .country-name {
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: .5px;
+    text-transform: uppercase;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 6px;
+    padding-bottom: 3px;
+    display: block;
+  }
+
+  /* colors */
+  .q0 {
+    fill: #81d8e5;
+    background-color: #81d8e5;
+   }
+  .q1 {
+    fill: #74c3ce;
+    background-color: #74c3ce;
+   }
+  .q2 {
+    fill: #68aeb9;
+    background-color: #68aeb9;
+   }
+  .q3 {
+    fill: #5c99a3;
+    background-color: #5c99a3;
+   }
+  .q4 {
+    fill: #50868e;
+    background-color: #50868e;
+   }
+  .q5 {
+    fill: #45737a;
+    background-color: #45737a;
+   }
+  .q6 {
+    fill: #396066;
+    background-color: #396066;
+   }
+  .q7 {
+    fill: #2f4d52;
+    background-color: #2f4d52;
+   }
+  .q8 {
+    fill: #243c40;
+    background-color: #243c40;
+   }
+
+   .notes {
+     font-size: 12px;
+     line-height: 18px;
+   }
+
+   .notes-desktop {
+     margin: 40px 0 0;
+
+     @include breakpoint("tablet") {
+       display: none;
+     }
+     @include breakpoint("mobile-max") {
+       display: none;
+     }
+   }
+
+  .notes-device {
+    margin: 15px 25px 0;
+
+    @include breakpoint("desktop") {
+      display: none;
+    }
+  }
+}

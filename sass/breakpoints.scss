@@ -1,0 +1,93 @@
+$rem-with-px-fallback : false;
+
+
+// Breakpoint
+// ----------
+$breakpoint-to-ems: true;
+$breakpoints: 'mobile' (min-width: 320px),
+              'mobile-max' (max-width: 640px),
+              'tablet' (min-width: 640px),
+              'tablet-max' (max-width: 1024px),
+              'tablet-landscape' (max-width: 1024px),
+              'tablet-landscape-max' (max-width: 1229px),
+              'desktop' (min-width: 1025px);
+$breakpoint-no-query-fallbacks: false;
+
+
+$breakpoints-mobile-min: "min-device-width: 320px";
+$breakpoints-mobile-max: "max-device-width: 640px";
+$breakpoints-mobile-small-max: "max-device-width: 340px";
+$breakpoints-tablet: "min-width: 640px";
+$breakpoints-tablet-max: "max-width: 1024px";
+$breakpoints-tablet-landscape: "max-width: 1024px";
+$breakpoints-tablet-landscape-max: "max-device-width: 1229px";
+$breakpoints-desktop: "min-width: 1025px";
+
+// General settings
+// ----------------
+
+// Vendor Prefixes
+// ---------------
+$support-for-original-webkit-gradients : true;
+
+
+// Links
+$link  : '&:link, &:visited';
+$focus : '&:focus, &:hover, &:active';
+
+// Define sprites used across the site
+// -----------------------------------
+
+// responsive mixin
+@mixin breakpoint($point) {
+    @if $point == desktop {
+        @media all and ($breakpoints-desktop) {
+            @content;
+        }
+    }
+    @else if $point == tablet {
+        @media all and ($breakpoints-tablet) and ($breakpoints-tablet-max) {
+            @content;
+        }
+    }
+    @else if $point == tablet-landscape {
+        @media all and ($breakpoints-tablet) and ($breakpoints-tablet-landscape-max) and (orientation: landscape) {
+            @content;
+        }
+    }
+    @else if $point == desktop-tablet {
+        @media all and ($breakpoints-tablet) {
+            @content;
+        }
+    }
+    @else if $point == handset-small {
+        @media all and ($breakpoints-mobile-small-max) {
+            @content;
+        }
+    }
+    @else if $point == handset {
+        @media all and ($breakpoints-mobile-max) {
+            @content;
+        }
+    }
+    @else if $point == mobile-max {
+        @media all and ($breakpoints-mobile-max) {
+            @content;
+        }
+    }
+    @else if $point == handset-landscape {
+        @media all and ($breakpoints-mobile-max) and (orientation: landscape) {
+            @content;
+        }
+    }
+    @else if $point == mobile {
+        @media all and ($breakpoints-tablet-max) {
+            @content;
+        }
+    }
+    @else {
+      @media all and (#{$point}) {
+         @content;
+       }
+    }
+}
