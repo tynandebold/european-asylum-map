@@ -13,6 +13,12 @@ body {
   /* map styles */
   /* colors */
 }
+@media all and (min-width: 1025px) {
+  /* line 7, ../sass/style.scss */
+  .interactive-map-section {
+    flex-direction: row;
+  }
+}
 @media all and (min-width: 640px) and (max-width: 1024px) {
   /* line 7, ../sass/style.scss */
   .interactive-map-section {
@@ -27,21 +33,21 @@ body {
     flex-direction: column;
   }
 }
-/* line 23, ../sass/style.scss */
+/* line 26, ../sass/style.scss */
 .interactive-map-section .hed-dek-wrapper {
   max-width: 31%;
   display: inline-block;
   vertical-align: top;
 }
 @media all and (min-width: 640px) and (max-device-width: 1229px) and (orientation: landscape) {
-  /* line 23, ../sass/style.scss */
+  /* line 26, ../sass/style.scss */
   .interactive-map-section .hed-dek-wrapper {
     display: block;
     margin: 0 auto;
   }
 }
 @media all and (min-width: 640px) and (max-width: 1024px) {
-  /* line 23, ../sass/style.scss */
+  /* line 26, ../sass/style.scss */
   .interactive-map-section .hed-dek-wrapper {
     max-width: 100%;
     margin: 0 auto;
@@ -49,13 +55,13 @@ body {
   }
 }
 @media all and (max-device-width: 640px) {
-  /* line 23, ../sass/style.scss */
+  /* line 26, ../sass/style.scss */
   .interactive-map-section .hed-dek-wrapper {
     max-width: 100%;
     margin: 0;
   }
 }
-/* line 42, ../sass/style.scss */
+/* line 45, ../sass/style.scss */
 .interactive-map-section .hed-dek-wrapper .headline {
   font-family: 'Lora', serif;
   font-weight: 700;
@@ -64,28 +70,28 @@ body {
   margin-bottom: 7px;
 }
 @media all and (min-width: 640px) and (max-device-width: 1229px) and (orientation: landscape) {
-  /* line 42, ../sass/style.scss */
+  /* line 45, ../sass/style.scss */
   .interactive-map-section .hed-dek-wrapper .headline {
     max-width: 580px;
     margin: 0 auto 5px;
   }
 }
 @media all and (min-width: 640px) and (max-width: 1024px) {
-  /* line 42, ../sass/style.scss */
+  /* line 45, ../sass/style.scss */
   .interactive-map-section .hed-dek-wrapper .headline {
     max-width: 580px;
     margin: 0 auto 5px;
   }
 }
 @media all and (max-device-width: 640px) {
-  /* line 42, ../sass/style.scss */
+  /* line 45, ../sass/style.scss */
   .interactive-map-section .hed-dek-wrapper .headline {
     font-size: 28px;
     line-height: 35px;
     margin: 0 25px 8px;
   }
 }
-/* line 64, ../sass/style.scss */
+/* line 67, ../sass/style.scss */
 .interactive-map-section .hed-dek-wrapper .dek {
   font-family: 'Lora', serif;
   font-size: 18px;
@@ -93,28 +99,28 @@ body {
   font-weight: 400;
 }
 @media all and (min-width: 640px) and (max-device-width: 1229px) and (orientation: landscape) {
-  /* line 64, ../sass/style.scss */
+  /* line 67, ../sass/style.scss */
   .interactive-map-section .hed-dek-wrapper .dek {
     max-width: 580px;
     margin: 0 auto;
   }
 }
 @media all and (min-width: 640px) and (max-width: 1024px) {
-  /* line 64, ../sass/style.scss */
+  /* line 67, ../sass/style.scss */
   .interactive-map-section .hed-dek-wrapper .dek {
     max-width: 580px;
     margin: 0 auto;
   }
 }
 @media all and (max-device-width: 640px) {
-  /* line 64, ../sass/style.scss */
+  /* line 67, ../sass/style.scss */
   .interactive-map-section .hed-dek-wrapper .dek {
     font-size: 18px;
     line-height: 25px;
     margin: 0 25px;
   }
 }
-/* line 86, ../sass/style.scss */
+/* line 89, ../sass/style.scss */
 .interactive-map-section .nav-wrapper {
   display: block;
   margin: 25px auto 10px;
@@ -122,7 +128,7 @@ body {
   /* scale styles */
 }
 @media all and (min-width: 640px) and (max-width: 1024px) {
-  /* line 86, ../sass/style.scss */
+  /* line 89, ../sass/style.scss */
   .interactive-map-section .nav-wrapper {
     display: flex;
     justify-content: space-between;
@@ -133,7 +139,7 @@ body {
   }
 }
 @media all and (max-device-width: 640px) {
-  /* line 86, ../sass/style.scss */
+  /* line 89, ../sass/style.scss */
   .interactive-map-section .nav-wrapper {
     display: flex;
     justify-content: space-between;
@@ -143,36 +149,36 @@ body {
     max-width: 100%;
   }
 }
-/* line 108, ../sass/style.scss */
+/* line 111, ../sass/style.scss */
 .interactive-map-section .nav-wrapper .btns-wrapper {
   display: inline-block;
   font-size: 12px;
 }
 @media all and (min-width: 640px) and (max-width: 1024px) {
-  /* line 108, ../sass/style.scss */
+  /* line 111, ../sass/style.scss */
   .interactive-map-section .nav-wrapper .btns-wrapper {
     margin-bottom: 15px;
   }
 }
 @media all and (max-device-width: 640px) {
-  /* line 108, ../sass/style.scss */
+  /* line 111, ../sass/style.scss */
   .interactive-map-section .nav-wrapper .btns-wrapper {
     margin: 0 25px 15px;
   }
 }
 @media all and (min-width: 640px) and (max-width: 1024px) {
-  /* line 119, ../sass/style.scss */
+  /* line 122, ../sass/style.scss */
   .interactive-map-section .nav-wrapper .btns-wrapper .btn-group {
     display: inline-block;
   }
 }
 @media all and (min-width: 640px) and (max-width: 1024px) {
-  /* line 124, ../sass/style.scss */
+  /* line 127, ../sass/style.scss */
   .interactive-map-section .nav-wrapper .btns-wrapper .btn-group.group2 {
     margin-left: 15px;
   }
 }
-/* line 131, ../sass/style.scss */
+/* line 134, ../sass/style.scss */
 .interactive-map-section .nav-wrapper .btns-wrapper .btn {
   padding: 10px 15px;
   background-color: #fff;
@@ -190,29 +196,29 @@ body {
   vertical-align: top;
 }
 @media all and (min-width: 640px) and (max-width: 1024px) {
-  /* line 131, ../sass/style.scss */
+  /* line 134, ../sass/style.scss */
   .interactive-map-section .nav-wrapper .btns-wrapper .btn {
     width: auto;
     margin: 0;
   }
 }
 @media all and (max-device-width: 640px) {
-  /* line 131, ../sass/style.scss */
+  /* line 134, ../sass/style.scss */
   .interactive-map-section .nav-wrapper .btns-wrapper .btn {
     width: 100%;
     margin: 0 0 5px;
   }
 }
-/* line 157, ../sass/style.scss */
+/* line 160, ../sass/style.scss */
 .interactive-map-section .nav-wrapper .btns-wrapper .btn:hover {
   cursor: pointer;
 }
-/* line 161, ../sass/style.scss */
+/* line 164, ../sass/style.scss */
 .interactive-map-section .nav-wrapper .btns-wrapper .btn.active {
   background-color: #333;
   color: #fff;
 }
-/* line 166, ../sass/style.scss */
+/* line 169, ../sass/style.scss */
 .interactive-map-section .nav-wrapper .btns-wrapper .btn-label {
   line-height: 20px;
   margin-bottom: 2px;
@@ -222,30 +228,30 @@ body {
   font-weight: 300;
   text-align: left;
 }
-/* line 176, ../sass/style.scss */
+/* line 179, ../sass/style.scss */
 .interactive-map-section .nav-wrapper .btns-wrapper .demo-label {
   margin-top: 7px;
 }
-/* line 182, ../sass/style.scss */
+/* line 185, ../sass/style.scss */
 .interactive-map-section .nav-wrapper .scale-wrapper {
   display: inline-block;
   line-height: normal;
   margin-top: 5px;
 }
 @media all and (min-width: 1025px) {
-  /* line 182, ../sass/style.scss */
+  /* line 185, ../sass/style.scss */
   .interactive-map-section .nav-wrapper .scale-wrapper {
     margin-top: 20px;
   }
 }
 @media (max-width: 380px) {
-  /* line 182, ../sass/style.scss */
+  /* line 185, ../sass/style.scss */
   .interactive-map-section .nav-wrapper .scale-wrapper {
     margin: 0 10px 0 25px;
     text-align: left;
   }
 }
-/* line 195, ../sass/style.scss */
+/* line 198, ../sass/style.scss */
 .interactive-map-section .nav-wrapper .scale-wrapper .scale-step-wrapper {
   font-size: 0;
   width: 306px;
@@ -253,12 +259,12 @@ body {
   text-align: left;
 }
 @media (max-width: 380px) {
-  /* line 195, ../sass/style.scss */
+  /* line 198, ../sass/style.scss */
   .interactive-map-section .nav-wrapper .scale-wrapper .scale-step-wrapper {
     width: 216px;
   }
 }
-/* line 206, ../sass/style.scss */
+/* line 209, ../sass/style.scss */
 .interactive-map-section .nav-wrapper .scale-wrapper .scale-step {
   display: inline-block;
   border: 2px solid #fff;
@@ -266,42 +272,42 @@ body {
   height: 20px;
 }
 @media (max-width: 380px) {
-  /* line 206, ../sass/style.scss */
+  /* line 209, ../sass/style.scss */
   .interactive-map-section .nav-wrapper .scale-wrapper .scale-step {
     width: 20px;
   }
 }
-/* line 217, ../sass/style.scss */
+/* line 220, ../sass/style.scss */
 .interactive-map-section .nav-wrapper .scale-wrapper .scale-label {
   margin-top: 5px;
   display: inline-block;
   font-size: 11px;
 }
-/* line 223, ../sass/style.scss */
+/* line 226, ../sass/style.scss */
 .interactive-map-section .nav-wrapper .scale-wrapper .less-label {
   margin-left: 2px;
 }
-/* line 227, ../sass/style.scss */
+/* line 230, ../sass/style.scss */
 .interactive-map-section .nav-wrapper .scale-wrapper .more-label {
   float: right;
   padding-right: 2px;
 }
-/* line 232, ../sass/style.scss */
+/* line 235, ../sass/style.scss */
 .interactive-map-section .nav-wrapper .scale-wrapper .no-data-wrapper {
   display: inline-block;
   width: 50px;
   font-size: 0;
   margin-left: 15px;
 }
-/* line 239, ../sass/style.scss */
+/* line 242, ../sass/style.scss */
 .interactive-map-section .nav-wrapper .scale-wrapper .no-data-box {
   background-color: #aaa;
 }
-/* line 243, ../sass/style.scss */
+/* line 246, ../sass/style.scss */
 .interactive-map-section .nav-wrapper .scale-wrapper .no-data-label.scale-label {
   padding-left: 2px;
 }
-/* line 250, ../sass/style.scss */
+/* line 253, ../sass/style.scss */
 .interactive-map-section .map {
   position: relative;
   height: 0;
@@ -313,26 +319,26 @@ body {
   margin: 0 auto;
 }
 @media all and (min-width: 640px) and (max-width: 1024px) {
-  /* line 250, ../sass/style.scss */
+  /* line 253, ../sass/style.scss */
   .interactive-map-section .map {
     width: 100%;
     padding-bottom: 70%;
   }
 }
 @media all and (max-device-width: 640px) {
-  /* line 250, ../sass/style.scss */
+  /* line 253, ../sass/style.scss */
   .interactive-map-section .map {
     width: 100%;
     padding-bottom: 70%;
   }
 }
 @media all and (min-width: 640px) and (max-device-width: 1229px) and (orientation: landscape) {
-  /* line 250, ../sass/style.scss */
+  /* line 253, ../sass/style.scss */
   .interactive-map-section .map {
     padding-bottom: 62%;
   }
 }
-/* line 272, ../sass/style.scss */
+/* line 275, ../sass/style.scss */
 .interactive-map-section .map .svg-elem {
   position: absolute;
   height: 100%;
@@ -340,26 +346,26 @@ body {
   left: 0;
   top: 0;
 }
-/* line 281, ../sass/style.scss */
+/* line 284, ../sass/style.scss */
 .interactive-map-section .country.active {
   fill: #FF9600;
 }
-/* line 285, ../sass/style.scss */
+/* line 288, ../sass/style.scss */
 .interactive-map-section .country {
   transition: fill .3s ease;
   fill: #aaa;
 }
-/* line 290, ../sass/style.scss */
+/* line 293, ../sass/style.scss */
 .interactive-map-section .country:hover {
   cursor: default;
 }
-/* line 294, ../sass/style.scss */
+/* line 297, ../sass/style.scss */
 .interactive-map-section .countryBorders {
   fill: none;
   stroke: #fff;
   stroke-linejoin: round;
 }
-/* line 300, ../sass/style.scss */
+/* line 303, ../sass/style.scss */
 .interactive-map-section .tooltip {
   position: absolute;
   text-align: center;
@@ -373,7 +379,7 @@ body {
   border: 1px solid #ccc;
   pointer-events: none;
 }
-/* line 314, ../sass/style.scss */
+/* line 317, ../sass/style.scss */
 .interactive-map-section .country-name {
   font-size: 11px;
   font-weight: bold;
@@ -384,78 +390,78 @@ body {
   padding-bottom: 3px;
   display: block;
 }
-/* line 326, ../sass/style.scss */
+/* line 329, ../sass/style.scss */
 .interactive-map-section .q0 {
   fill: #81d8e5;
   background-color: #81d8e5;
 }
-/* line 330, ../sass/style.scss */
+/* line 333, ../sass/style.scss */
 .interactive-map-section .q1 {
   fill: #74c3ce;
   background-color: #74c3ce;
 }
-/* line 334, ../sass/style.scss */
+/* line 337, ../sass/style.scss */
 .interactive-map-section .q2 {
   fill: #68aeb9;
   background-color: #68aeb9;
 }
-/* line 338, ../sass/style.scss */
+/* line 341, ../sass/style.scss */
 .interactive-map-section .q3 {
   fill: #5c99a3;
   background-color: #5c99a3;
 }
-/* line 342, ../sass/style.scss */
+/* line 345, ../sass/style.scss */
 .interactive-map-section .q4 {
   fill: #50868e;
   background-color: #50868e;
 }
-/* line 346, ../sass/style.scss */
+/* line 349, ../sass/style.scss */
 .interactive-map-section .q5 {
   fill: #45737a;
   background-color: #45737a;
 }
-/* line 350, ../sass/style.scss */
+/* line 353, ../sass/style.scss */
 .interactive-map-section .q6 {
   fill: #396066;
   background-color: #396066;
 }
-/* line 354, ../sass/style.scss */
+/* line 357, ../sass/style.scss */
 .interactive-map-section .q7 {
   fill: #2f4d52;
   background-color: #2f4d52;
 }
-/* line 358, ../sass/style.scss */
+/* line 361, ../sass/style.scss */
 .interactive-map-section .q8 {
   fill: #243c40;
   background-color: #243c40;
 }
-/* line 363, ../sass/style.scss */
+/* line 366, ../sass/style.scss */
 .interactive-map-section .notes {
   font-size: 12px;
   line-height: 18px;
 }
-/* line 368, ../sass/style.scss */
+/* line 371, ../sass/style.scss */
 .interactive-map-section .notes-desktop {
   margin: 40px 0 0;
 }
 @media all and (min-width: 640px) and (max-width: 1024px) {
-  /* line 368, ../sass/style.scss */
+  /* line 371, ../sass/style.scss */
   .interactive-map-section .notes-desktop {
     display: none;
   }
 }
 @media all and (max-device-width: 640px) {
-  /* line 368, ../sass/style.scss */
+  /* line 371, ../sass/style.scss */
   .interactive-map-section .notes-desktop {
     display: none;
   }
 }
-/* line 379, ../sass/style.scss */
+/* line 382, ../sass/style.scss */
 .interactive-map-section .notes-device {
   margin: 15px 25px 0;
 }
 @media all and (min-width: 1025px) {
-  /* line 379, ../sass/style.scss */
+  /* line 382, ../sass/style.scss */
   .interactive-map-section .notes-device {
     display: none;
   }
